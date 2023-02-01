@@ -1,4 +1,4 @@
-package freecrm;
+package pages.freecrm;
 
 public class DealsPage{
 

@@ -1,4 +1,4 @@
-package freecrm;
+package pages.freecrm;
 
 import base.CommonAPI;
 
