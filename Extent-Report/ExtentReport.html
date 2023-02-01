@@ -9,7 +9,7 @@
 		-->
 
 		<meta charset='UTF-8' /> 
-		<meta name='description' content='ExtentReports (by Anshoo Arora) is a reporting library for automation testing for .NET and Java. It creates detailed and beautiful HTML reports for modern browsers. ExtentReports shows test and step summary along with dashboards, system and environment details for quick analysis of your tests.' />
+		<meta name='description' content='ExtentReports (by Anshoo Arora) is a reporting library for automation testing for .NET and Java. It creates detailed and beautiful HTML reports for modern browsers. ExtentReports shows magento and step summary along with dashboards, system and environment details for quick analysis of your tests.' />
 		<meta name='robots' content='noodp, noydir' />
 		<meta name='viewport' content='width=device-width, initial-scale=1' />
 		<meta name='extentx' id='extentx' content='' />
@@ -42,7 +42,7 @@
 				<a href='#' data-activates='slide-out' class='button-collapse hide-on-large-only'><i class='mdi-navigation-apps'></i></a>
 			</div>
 			<ul id='slide-out' class='side-nav fixed hide-on-med-and-down'>
-				<li class='analysis waves-effect active'><a href='#!' class='test-view' onclick="_updateCurrentStage(0)"><i class='mdi-action-dashboard'></i>Test Details</a></li>
+				<li class='analysis waves-effect active'><a href='#!' class='magento-view' onclick="_updateCurrentStage(0)"><i class='mdi-action-dashboard'></i>Test Details</a></li>
 				<li class='analysis waves-effect'>
 					<a href='#!' onclick="_updateCurrentStage(-1)" class='dashboard-view'><i class='mdi-action-track-changes'></i></i>Analysis</a>
 				</li>
@@ -111,17 +111,17 @@
 							<div>
 								<span class='panel-name'>Tests View</span>
 							</div> 
-							<div class='panel-setting modal-trigger test-count-setting right'>
-								<a href='#test-count-setting'><i class='mdi-navigation-more-vert text-md'></i></a>
+							<div class='panel-setting modal-trigger magento-count-setting right'>
+								<a href='#magento-count-setting'><i class='mdi-navigation-more-vert text-md'></i></a>
 							</div> 
 							<div class='chart-box'>
-								<canvas class='text-centered' id='test-analysis'></canvas>
+								<canvas class='text-centered' id='magento-analysis'></canvas>
 							</div> 
 							<div>
-								<span class='weight-light'><span class='t-pass-count weight-normal'></span> test(s) passed</span>
+								<span class='weight-light'><span class='t-pass-count weight-normal'></span> magento(s) passed</span>
 							</div> 
 							<div>
-								<span class='weight-light'><span class='t-fail-count weight-normal'></span> test(s) failed, <span class='t-others-count weight-normal'></span> others</span>
+								<span class='weight-light'><span class='t-fail-count weight-normal'></span> magento(s) failed, <span class='t-others-count weight-normal'></span> others</span>
 							</div> 
 						</div> 
 					</div> 
@@ -195,7 +195,7 @@
 			<!-- /dashboard -->
 			
 			<!-- tests -->
-			<div id='test-view' class='row _addedTable'>
+			<div id='magento-view' class='row _addedTable'>
 				<div class='col _addedCell1'>
 					<div class='contents'>
 						<div class='card-panel heading'>
@@ -240,13 +240,13 @@
 						</div>
 						<div class='card-panel no-padding-h no-padding-v no-margin-v'>
 							<div class='wrapper'>
-								<ul id='test-collection' class='test-collection'>
+								<ul id='magento-collection' class='magento-collection'>
 								</ul>
 							</div>
 						</div>
 					</div>
 				</div>
-				<div id='test-details-wrapper' class='col _addedCell2'>
+				<div id='magento-details-wrapper' class='col _addedCell2'>
 					<div class='contents'>
 						<div class='card-panel details-view'>
 							<h5 class='details-name'></h5>
@@ -280,24 +280,24 @@
 		</div>
 		<!-- /container -->
 		
-		<!-- test dashboard counts setting -->
-		<div id='test-count-setting' class='modal bottom-sheet'> 
+		<!-- magento dashboard counts setting -->
+		<div id='magento-count-setting' class='modal bottom-sheet'>
 			<div class='modal-content'> 
 				<h5>Configure Tests Count Setting</h5> 
-				<input name='test-count-setting' type='radio' id='parentWithoutNodes' class='with-gap'> 
+				<input name='magento-count-setting' type='radio' id='parentWithoutNodes' class='with-gap'>
 				<label for='parentWithoutNodes'>Parent Tests Only (Does not include child nodes in counts)</label> 
 				<br> 
-				<input name='test-count-setting' type='radio' id='parentWithoutNodesAndNodes' class='with-gap'> 
+				<input name='magento-count-setting' type='radio' id='parentWithoutNodesAndNodes' class='with-gap'>
 				<label for='parentWithoutNodesAndNodes'>Parent Tests Without Child Tests + Child Tests</label> 
 				<br> 
-				<input name='test-count-setting' type='radio' id='childNodes' class='with-gap'> 
+				<input name='magento-count-setting' type='radio' id='childNodes' class='with-gap'>
 				<label for='childNodes'>Child Tests Only</label> 
 			</div> 
 			<div class='modal-footer'> 
 				<a href='#!' class='modal-action modal-close waves-effect waves-green btn'>Save</a> 
 			</div> 
 		</div>
-		<!-- /test dashboard counts setting -->
+		<!-- /magento dashboard counts setting -->
 		
 		<!-- filter for step status -->
 		<div id='step-status-filter' class='modal bottom-sheet'> 
